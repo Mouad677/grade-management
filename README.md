@@ -125,5 +125,5 @@ This project is licensed under the MIT License.
 
 ## 🎥 Demo Video
 
-[![Watch the video](homePage.png)](https://drive.google.com/file/d/1LT98ejjDdQC1FFxX-QKhJlqXCbyiM0NA/view?usp=sharing)
+[![Watch the video](Home-Page.png)](https://drive.google.com/file/d/1LT98ejjDdQC1FFxX-QKhJlqXCbyiM0NA/view?usp=sharing)
 

@@ -1,86 +1,82 @@
-# Système de Gestion des Notes
+# Grade Management System
 
-Un système moderne de gestion des notes pour les établissements d'enseignement, développé avec Laravel.
+A modern grade management system for educational institutions, developed with Laravel.
 
-## Prérequis
+## Prerequisites
 
-- PHP >= 8.1
-- Composer
-- MySQL
-- Node.js & NPM (pour les assets)
+- PHP >= 8.1  
+- Composer  
+- SQLite *(or another supported DBMS)*  
+- Node.js & NPM (for assets)
 
 ## Installation
 
-1. **Cloner le projet**
+1. **Clone the repository**
    ```bash
-   git clone [URL_DU_REPO]
+   git clone [REPO_URL]
    cd system-management
    ```
 
-2. **Installer les dépendances PHP**
+2. **Install PHP dependencies**
    ```bash
    composer install
    ```
 
-3. **Configurer l'environnement**
+3. **Configure the environment**
    ```bash
    cp .env.example .env
    php artisan key:generate
    ```
 
-4. **Configurer la base de données**
-   - Ouvrir le fichier `.env`
-   - Modifier les paramètres de la base de données :
+4. **Set up the database**
+   - Open the `.env` file
+   - Modify the database configuration:
      ```
-     DB_CONNECTION=mysql
-     DB_HOST=127.0.0.1
-     DB_PORT=3306
-     DB_DATABASE=system_management
-     DB_USERNAME=root
-     DB_PASSWORD=
+     DB_CONNECTION=sqlite
+     DB_DATABASE=/absolute/path/to/database.sqlite
      ```
 
-5. **Créer la base de données**
+5. **Run migrations**
    ```bash
    php artisan migrate
    ```
 
-6. **Remplir la base de données avec les données de test**
+6. **Seed the database with test data**
    ```bash
    php artisan db:seed
    ```
 
-7. **Installer les dépendances NPM et compiler les assets**
+7. **Install NPM dependencies and compile assets**
    ```bash
    npm install
    npm run dev
    ```
 
-8. **Lancer le serveur de développement**
+8. **Start the development server**
    ```bash
    php artisan serve
    ```
 
-## Accès au système
+## System Access
 
 - URL : http://localhost:8000
-- Compte administrateur par défaut :
+- Default Admin Account:
   - Email : admin@example.com
-  - Mot de passe : password
-- Compte étudiant par défaut :
+  - Password: 123456789@
+- Default Student Account:
   - Email : student@example.com
-  - Mot de passe : password
+  - Password: student code
+  - 
+## Features
 
-## Fonctionnalités
+- User management (Admin)
+- Grade management
+- Custom dashboard
+- Responsive interface
+- Authentication system
+- Role management (Admin/Student))
 
-- Gestion des utilisateurs (Admin)
-- Gestion des notes
-- Tableau de bord personnalisé
-- Interface responsive
-- Système d'authentification
-- Gestion des rôles (Admin/Étudiant)
-
-## Structure du projet
+## Project Structure
 
 ```
 system-management/
@@ -101,29 +97,28 @@ system-management/
 └── tests/
 ```
 
-## Développement
-
-Pour le développement, vous pouvez utiliser :
+## Development
+For development:
 ```bash
 npm run dev
 ```
 
-Pour la production :
+For production:
 ```bash
 npm run build
 ```
 
-## Tests
+## Testing
 
-Pour exécuter les tests :
+To run the test suite:
 ```bash
 php artisan test
 ```
 
 ## Support
 
-Pour toute question ou problème, veuillez créer une issue dans le repository.
+For questions or issues, please open an issue on the repository.
 
-## Licence
+## License
 
-Ce projet est sous licence MIT.
+This project is licensed under the MIT License.

@@ -122,3 +122,8 @@ For questions or issues, please open an issue on the repository.
 ## License
 
 This project is licensed under the MIT License.
+
+## 🎥 Demo Video
+
+[![Watch the video](homePage.png)](https://drive.google.com/file/d/1LT98ejjDdQC1FFxX-QKhJlqXCbyiM0NA/view?usp=sharing)
+
